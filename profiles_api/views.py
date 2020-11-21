@@ -121,7 +121,7 @@ class UserProfileFeedViewSet(viewsets.ModelViewSet):
     permission_classes = (
         permissions.UpdateOwnStatus,
         IsAuthenticated
-        # IsAuthenticatedOrReadOnly - Only authenticated users can view
+        # IsAuthenticatedOrReadOnly - Only authenticated users can view/read
     )
 
     def perform_create(self, serializer):
